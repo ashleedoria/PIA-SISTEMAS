@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linux</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<header class="top">
+  <button id="menuBtn" aria-label="Abrir menú de capítulos">☰</button>
+  <a class="brand" href="#portada">Linux Mint</a>
+<img class="logo" data-opc src="img/mint.png" alt="Logo de Linux Mint">
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar: swap, sudo, ext4…  (tecla /)" autocomplete="off" aria-label="Buscar en el manual">
+    <div id="results" class="results" hidden></div>
+  </div>
+</header>
+
+<div class="layout">
+<nav id="nav" class="side" aria-label="Capítulos"></nav>
+<main>
+
+<!-- portada **PENDIENTE: pedir y agregar la foto de cada integrante del equipo** -->
+
+<section class="chapter" id="portada" data-title="Portada" data-nonum data-nosearch>
+  <div class="cover">
+    <div class="logos">
+      <img class="logo" data-opc src="img/uanl.png" alt="Logo de la UANL">
+      <img class="logo" data-opc src="img/fime.png" alt="Logo de la FIME">
+    </div>
+    <h2>Universidad Autónoma de Nuevo León</h2>
+    <p class="fac">Facultad de Ingeniería Mecánica y Eléctrica</p>
+    <h1>Sistemas Operativos</h1>
+    <p class="sub">Producto Integrador de Aprendizaje<br>Linux Mint</p>
+    <dl class="datos">
+      <div><dt>Docente</dt><dd>Dra. Norma Edith Marín Martínez</dd></div>
+      <div><dt>Semestre</dt><dd>Agosto - Diciembre 2026</dd></div>
+      <div><dt>Equipo</dt><dd>1</dd></div>
+      <div><dt>Grupo</dt><dd>014</dd></div>
+      <div><dt>Fecha de entrega</dt><dd>Jueves 15 de octubre de 2026</dd></div>
+    </dl>
+    <h3>Integrantes del equipo</h3>
+    <div class="team">
+      <article class="member">
+        <img class="foto" data-opc src="img/foto1.jpg">
+        <h4>Doria Martínez Ashlee Alejandra <span style="display:inline-block;margin-left:6px;padding:1px 8px;border-radius:10px;background:var(--verde-claro);color:var(--verde-osc);font-size:.85em;white-space:nowrap">100%</span></h4>
+        <p>Matrícula: 2222792</p>
+        <p>Carrera: IAS</p>
+      </article>
+      <article class="member">
+        <img class="foto" data-opc src="img/foto2.jpg">
+        <h4>Gutiérrez Zamora Ian Daniel <span style="display:inline-block;margin-left:6px;padding:1px 8px;border-radius:10px;background:var(--verde-claro);color:var(--verde-osc);font-size:.85em;white-space:nowrap">100%</span></h4>
+        <p>Matrícula: 2044373</p>
+        <p>Carrera: ITS</p>
+      </article>
+      <article class="member">
+        <img class="foto" data-opc src="img/foto3.jpg">
+        <h4>Lozano Alfredo Isaac <span style="display:inline-block;margin-left:6px;padding:1px 8px;border-radius:10px;background:var(--verde-claro);color:var(--verde-osc);font-size:.85em;white-space:nowrap">100%</span></h4>
+        <p>Matrícula: 2111474</p>
+        <p>Carrera: IAS</p>
+      </article>
+      <article class="member">
+        <img class="foto" data-opc src="img/foto4.jpg">
+        <h4>Mendoza Martínez Fernando Joshua <span style="display:inline-block;margin-left:6px;padding:1px 8px;border-radius:10px;background:var(--verde-claro);color:var(--verde-osc);font-size:.85em;white-space:nowrap">100%</span></h4>
+        <p>Matrícula: 2008658</p>
+        <p>Carrera: ITS</p>
+      </article>
+    <article class="member">
+        <img class="foto" data-opc src="img/foto5.jpg">
+        <h4>José Manuel González Moreno <span style="display:inline-block;margin-left:6px;padding:1px 8px;border-radius:10px;background:var(--verde-claro);color:var(--verde-osc);font-size:.85em;white-space:nowrap">100%</span></h4>
+        <p>Matrícula: 2100364</p>
+        <p>Carrera: IAS</p>
+      </article>
+    </div>
+    <a class="btn" href="#indice">Entrar</a>
+  </div>
+</section>
+
+    
+<!-- índice -->
+    
+<section class="chapter" id="indice" data-title="Índice" data-nonum data-nosearch>
+  <h1>Índice</h1>
+  <p class="lead">Elige un capítulo para empezar. También puedes usar el buscador de la parte superior.</p>
+  <div id="cards" class="cards"></div>
+</section>
+
+ <!-- Linea del Tiempo -->   
+
+<section class="chapter" id="lineatiempo" data-title="Linea del Tiempo - Linux Mint"
+  <h1>Linea del Tiempo - Linux Mint</h1>
+
+  <h2>2006 — Nacimiento de Linux Mint (Versión 1.0 "Ada"):</h2>
+  <p>Lanzada por Clément Lefèbvre en agosto de 2006.
+    Inicialmente se basaba en Kubuntu; su objetivo fue ofrecer un sistema listo para usar (out-of-the-box) con códecs multimedia propietarios incluidos por defecto.</p>
+    <img class=foto src="img/tiempo1.jpg">
+   <h2>2006 — Adopción de la base Ubuntu (Versión 2.0 "Barbara"):</h2>
+    <p>Mint cambió su base principal directamente a Ubuntu (GNOME) e introdujo su propio gestor de paquetes y herramientas de configuración exclusivas (mintMenu, mintInstall).</p>
+    <img class=foto src="img/tiempo2.jpg">
+ <h2>2010 — Surgimiento de LMDE (Linux Mint Debian Edition):</h2>
+    <p>Se presentó una edición alternativa basada directamente en Debian en lugar de Ubuntu, concebida como respaldo técnico ante posibles cambios drásticos en Canonical.</p>
+    <img class=foto src="img/tiempo3.jpg">
+ <h2>2011-2012 — Nacimiento del escritorio Cinnamon (Versión 12 "Lisa" y 13 "Maya"):</h2>
+    <p>Tras el abandono de GNOME 2 por parte de GNOME 3 y Unity, el equipo de Mint creó Cinnamon (bifurcación de GNOME Shell) y adoptó MATE (bifurcación de GNOME 2), consolidando su identidad de interfaz clásica y ligera.</p>
+    <img class=foto src="img/tiempo4.jpg">
+ <h2>2014 — Adopción de bases exclusivas LTS (Versión 17 "Qiana"):</h2>
+    <p>Linux Mint modificó su ciclo de soporte: a partir de Mint 17, todas las versiones principales pasaron a basarse únicamente en versiones LTS (soporte extendido) de Ubuntu, garantizando estabilidad prolongada.</p>
+    <img class=foto src="img/tiempo5.jpg">
+ <h2>2016 — Lanzamiento del proyecto X-Apps (Versión 18 "Sarah"):</h2>
+    <p>Se crearon aplicaciones nativas universales (Xed, Xviewer, Xreader, Pix) diseñadas para mantener compatibilidad e integración visual homogénea en Cinnamon, MATE y Xfce.</p>
+    <img class=foto src="img/tiempo6.jpg">
+ <h2>2020 — Integración de Warpinator y rechazo a Snap (Versión 20 "Ulyana"):</h2>
+    <p>Mint implementó Warpinator para compartir archivos en red local y tomó la postura de bloquear por defecto el gestor de paquetes Snap de Ubuntu, priorizando paquetes tradicionales (.deb) y Flatpak.</p>
+    <img class=foto src="img/tiempo7.jpg">
+ <h2>2022 — Modernización de diseño y Cinnamon 5.4 (Versión 21 "Vanessa"):</h2>
+    <p>Se actualizó la base a Ubuntu 22.04 LTS, introduciendo el gestor de temas modernizado, mejor integración de impresoras sin controladores y soporte ampliado para Flatpak.</p>
+    <img class=foto src="img/tiempo8.jpeg">
+ <h2>2024 — Linux Mint 22 ("Wilma"):</h2>
+    <p>Basada en Ubuntu 24.04 LTS, incorporó el kernel 6.8, el entorno Cinnamon 6.2 y mejoras profundas en el soporte de audio mediante PipeWire por defecto y migración a librerías modernas de GTK4/libadwaita.</p>
+    <img class=foto src="img/tiempo9.jpeg">
+  
+
+
+    
+</section>    
+
+<!-- capítulo 1 -->
+
+<section class="chapter" id="introduccion" data-title="Unidad 1" data-desc="Introducción, requisitos, instalación, descripción general y arquitectura.">
+  <h1>Unidad 1: Introducción, instalación y arquitectura</h1>
+  <p>Este documento es el manual de usuario de una guía web creada como proyecto de la materia de Sistemas Operativos. La guía no es un sistema operativo que se pueda ejecutar: es una herramienta informativa que reúne los conceptos fundamentales de Linux Mint.</p>
+  <h2>Objetivo del trabajo</h2>
+  <p>Ofrecer una referencia ordenada sobre seis áreas: descripción general, arquitectura y desempeño, concurrencia, almacenamiento, redes y servicios distribuidos, y seguridad. Cada capítulo explica la teoría esencial de forma sencilla para compañeros de curso.</p>
+  <h2>¿Para quién está pensado?</h2>
+  <p>Para estudiantes de informática o de sistemas operativos que necesiten una consulta rápida. No se requieren conocimientos avanzados, solo familiaridad básica con una computadora.</p>
+  <h2>¿Cómo usar este documento?</h2>
+  <p>Los capítulos siguen el mismo orden que el menú lateral. Puedes leerlos en secuencia o saltar al que necesites, porque cada uno se entiende por sí solo. A lo largo del manual encontrarás ilustraciones, simuladores y una terminal de práctica.</p>
+  <h2>Limitaciones</h2>
+  <div class="note warn">Este manual no reemplaza fuentes oficiales como <em>Modern Operating Systems</em> de Tanenbaum ni la documentación de Linux Mint. Su finalidad es estrictamente pedagógica.</div>
+<h1>Requisitos del sistema</h1>
+  <p>Cambia de pestaña según lo que quieras hacer.</p>
+  <div class="tabs"><button class="on" data-t="t1">Para ver esta guía</button><button data-t="t2">Para instalar Linux Mint</button></div>
+  <div class="panel on" id="t1">
+    <table>
+      <tr><th>Requisito</th><th>Detalle</th></tr>
+      <tr><td>Navegador</td><td>Una versión reciente de Chrome, Firefox, Edge, Safari u Opera.</td></tr>
+      <tr><td>Resolución</td><td>Mínimo 800×600 píxeles; recomendado 1024×768 o más. En pantallas menores el menú se oculta tras el botón ☰.</td></tr>
+      <tr><td>Memoria RAM</td><td>1 GB o más para que el navegador funcione sin lentitud.</td></tr>
+      <tr><td>Cuenta de usuario</td><td>No se necesita crear ninguna cuenta ni iniciar sesión.</td></tr>
+      <tr><td>Dispositivos</td><td>Windows, macOS, Linux, Android o iPadOS/iOS con navegador actualizado.</td></tr>
+    </table>
+  </div>
+  <div class="panel" id="t2">
+    <table>
+      <tr><th>Recurso</th><th>Mínimo</th><th>Recomendado</th></tr>
+      <tr><td>Memoria RAM</td><td>2 GB</td><td>4 GB o más</td></tr>
+      <tr><td>Espacio en disco</td><td>20 GB</td><td>100 GB</td></tr>
+      <tr><td>Pantalla</td><td>1024×768</td><td>Superior</td></tr>
+      <tr><td>Memoria USB</td><td>8 GB</td><td>8 GB o más</td></tr>
+    </table>
+    <div class="note">Si tu equipo es antiguo, elige la edición Xfce o MATE, que consumen menos recursos.</div>
+  </div>
+ <h1>Instalación y acceso</h1>
+  <h2>Acceso a la guía</h2>
+  <p>La guía funciona directamente desde el navegador, sin instalar nada. En una computadora basta con abrir el archivo <code>index.html</code> o el enlace donde esté publicada.</p>
+  <h2>Agregarla a la pantalla de inicio</h2>
+  <p>Si la publicas en internet, en el celular puedes crear un acceso directo:</p>
+  <ul>
+    <li><strong>Android (Chrome):</strong> abre el menú de tres puntos y elige <em>Agregar a la pantalla principal</em>. Luego selecciona <em>Instalar</em> o <em>Crear acceso directo</em>.</li>
+    <li><strong>iPhone o iPad (Safari):</strong> toca el botón Compartir y elige <em>Agregar a pantalla de inicio</em>; confirma el nombre y presiona <em>Agregar</em>.</li>
+  </ul>
+  <h2>Gestión de usuarios y permisos</h2>
+  <p>La guía no pide cuenta de usuario. El único permiso que podría solicitar el dispositivo es el de agregar el acceso directo, y es opcional.</p>
+
+  <div class="note warn">Si harás <em>dual boot</em> con Windows, respalda tus datos antes de modificar las particiones.</div>
+<h1>Descripción general</h1>
+  <p>Linux Mint es una distribución de Linux para escritorio basada en Ubuntu LTS. Busca ofrecer una experiencia moderna, elegante y cómoda: incluye códecs y programas frecuentes desde el primer arranque, y por eso es fácil de usar para quien comienza en Linux.</p>
+
+  <h2>Historia</h2>
+  <p>El proyecto fue fundado por el desarrollador francés Clément Lefèbvre, conocido en la comunidad como Clem. Su primera versión oficial, Linux Mint 1.0, apareció en 2006.</p>
+  <h2>Ediciones</h2>
+  <p>Selecciona una edición para conocer más.</p>
+  <div class="explorer">
+    <div class="btns"><button data-info="Edición principal. Su escritorio Cinnamon es moderno, personalizable y muy parecido a Windows.">Cinnamon</button><button data-info="Escritorio clásico y ligero, derivado de GNOME 2. Buen equilibrio entre rendimiento y funciones.">MATE</button><button data-info="La más ligera. Pensada para computadoras antiguas o con pocos recursos.">Xfce</button><button data-info="Linux Mint Debian Edition: se construye directamente sobre Debian para asegurar la continuidad del proyecto si Ubuntu cambiara.">LMDE</button></div>
+    <p class="out">Haz clic en una edición.</p>
+  </div>
+  <h2>Comparativa: ventajas y desventajas</h2>
+  <p>Filtra los puntos y abre cada tarjeta para ver por qué importa. La barra indica cuánto pesa cada punto para un estudiante.</p>
+  <div class="btns" id="cmpFilter"><button class="on" data-f="all">Todos</button><button data-f="pro">✔ Ventajas</button><button data-f="con">✖ Desventajas</button></div>
+  <div class="cmp-grid">
+    <details class="pt pro"><summary><b>Gratuito y de código abierto</b><span class="meter"><i style="width:95%"></i></span></summary><p>No pagas licencias y puedes estudiar o modificar el código fuente. Es ideal para aprender cómo funciona un sistema operativo por dentro.</p></details>
+    <details class="pt pro"><summary><b>Interfaz amigable</b><span class="meter"><i style="width:85%"></i></span></summary><p>El escritorio Cinnamon se parece a Windows, por lo que la transición es rápida para quien viene de ese sistema.</p></details>
+    <details class="pt pro"><summary><b>Amplio soporte multimedia</b><span class="meter"><i style="width:75%"></i></span></summary><p>Incluye códecs desde la instalación, así que puedes reproducir audio y video sin configurar nada extra.</p></details>
+    <details class="pt pro"><summary><b>Actualizaciones controladas</b><span class="meter"><i style="width:80%"></i></span></summary><p>Tú decides qué instalar y cuándo. El Gestor de actualizaciones clasifica los parches según su importancia.</p></details>
+    <details class="pt pro"><summary><b>Bajo consumo de recursos</b><span class="meter"><i style="width:70%"></i></span></summary><p>Las ediciones Xfce y MATE permiten reutilizar computadoras antiguas con un rendimiento aceptable.</p></details>
+    <details class="pt pro"><summary><b>Seguridad por diseño</b><span class="meter"><i style="width:85%"></i></span></summary><p>El modelo de permisos, el uso de sudo y los repositorios verificados reducen los riesgos de forma natural.</p></details>
+    <details class="pt con"><summary><b>Menos común en empresas</b><span class="meter"><i style="width:60%"></i></span></summary><p>No es tan usado en entornos laborales, lo que puede causar incompatibilidades con programas específicos.</p></details>
+    <details class="pt con"><summary><b>Algunas tareas requieren comandos</b><span class="meter"><i style="width:50%"></i></span></summary><p>Aunque lo básico es gráfico, ciertas configuraciones obligan a usar la terminal o a entender cómo funcionan los paquetes.</p></details>
+    <details class="pt con"><summary><b>Software comercial limitado</b><span class="meter"><i style="width:65%"></i></span></summary><p>Varios programas comerciales no tienen versión nativa para Linux; hay que usar alternativas libres o capas de compatibilidad.</p></details>
+    <details class="pt con"><summary><b>Soporte de hardware variable</b><span class="meter"><i style="width:40%"></i></span></summary><p>Algunos dispositivos muy nuevos o específicos pueden necesitar drivers adicionales.</p></details>
+  </div>
+
+  <h2>Linux Mint frente a otros sistemas</h2>
+  <p>Elige un criterio y se resaltará su fila con la conclusión.</p>
+  <div class="btns" id="crit">
+    <button data-row="r1" data-info="Gana Linux Mint: no requiere licencia ni suscripción.">Costo</button>
+    <button data-row="r2" data-info="Gana Linux Mint: revive computadoras antiguas con ediciones ligeras.">Hardware</button>
+    <button data-row="r3" data-info="Gana Linux Mint: puedes cambiar el escritorio, los temas y casi todo el comportamiento.">Personalización</button>
+    <button data-row="r4" data-info="Gana Windows: es el sistema con más programas comerciales disponibles.">Software</button>
+    <button data-row="r5" data-info="Gana Windows, aunque Mint ha mejorado gracias a Steam y Proton.">Videojuegos</button>
+    <button data-row="r6" data-info="Windows y macOS son más familiares para la mayoría; Mint se acerca mucho con Cinnamon.">Aprendizaje</button>
+  </div>
+  <p class="out" id="critOut">Selecciona un criterio.</p>
+  <table class="cmp-table">
+    <tr><th>Criterio</th><th>Linux Mint</th><th>Windows 11</th><th>macOS</th></tr>
+    <tr id="r1"><td>Costo</td><td class="g">Gratis</td><td class="b">De pago</td><td class="m">Incluido en el equipo Apple</td></tr>
+    <tr id="r2"><td>Requisitos de hardware</td><td class="g">Bajos (2 GB de RAM)</td><td class="m">Moderados (4 GB de RAM y TPM 2.0)</td><td class="b">Solo equipos Apple</td></tr>
+    <tr id="r3"><td>Personalización</td><td class="g">Muy alta</td><td class="m">Media</td><td class="b">Limitada</td></tr>
+    <tr id="r4"><td>Software comercial</td><td class="b">Limitado</td><td class="g">Muy amplio</td><td class="g">Amplio</td></tr>
+    <tr id="r5"><td>Videojuegos</td><td class="m">En crecimiento</td><td class="g">Catálogo más completo</td><td class="b">Reducido</td></tr>
+    <tr id="r6"><td>Curva de aprendizaje</td><td class="m">Media</td><td class="g">Baja</td><td class="g">Baja</td></tr>
+  </table>
+  <p class="leyenda"><span class="g">Punto a favor</span> <span class="m">Intermedio</span> <span class="b">Punto en contra</span></p>
+<h1>1. Arquitectura y desempeño</h1>
+  <p>Desde su lanzamiento, el objetivo de Mint ha sido funcionar bien tanto en equipos modernos como en hardware antiguo. Para lograrlo se apoya en un kernel monolítico y modular: el núcleo controla los dispositivos, pero permite cargar o quitar <em>drivers</em> en tiempo real, sin reiniciar.</p>
+
+  <h2>Componentes clave</h2>
+  <div class="explorer">
+    <div class="btns"><button data-info="Gestiona CPU, memoria, procesos y dispositivos. Es el corazón del sistema.">Kernel</button><button data-info="GRUB es el gestor de arranque: carga el kernel en memoria al encender el equipo.">GRUB</button><button data-info="Primer proceso del sistema (PID 1). Inicia y supervisa los servicios en segundo plano.">systemd</button><button data-info="Pantalla de inicio de sesión. Mint usa LightDM.">LightDM</button><button data-info="Capa de presentación independiente del núcleo: puede cambiarse por MATE o Xfce sin tocar el resto.">Cinnamon</button></div>
+    <p class="out">Selecciona un componente.</p>
+  </div>
+  <h2>Proceso de arranque</h2>
+  <ol><li>El firmware (BIOS o UEFI) revisa el hardware.</li><li>GRUB carga el kernel.</li><li>El kernel arranca y lanza systemd.</li><li>systemd levanta servicios y el gestor de sesión.</li><li>Inicias sesión y aparece el escritorio.</li></ol>
+  <h2>Gestión de software</h2>
+  <p>Mint usa <strong>APT</strong> y paquetes <code>.deb</code>, con resolución automática de dependencias. También admite <strong>Flatpak</strong>, que empaqueta cada aplicación con lo que necesita.</p>
+  <h2>Optimización</h2>
+  <ul><li>Usa una edición ligera (Xfce o MATE) en equipos modestos.</li><li>Desactiva programas de inicio que no necesites.</li><li>Revisa el consumo con el Monitor del sistema.</li><li>Mantén el sistema actualizado desde el Gestor de actualizaciones.</li></ul>
+    
+</section>
+
+
+
+<!-- concurrencia AQUÍ EMPIEZA UNIDAD 2-->
+
+<section class="chapter" id="concurrencia" data-title="Unidad 2" data-desc="Concurrencia: procesos, hilos y multitarea.">
+  <h1>Unidad 2: Concurrencia, multitarea y control de procesos</h1>
+  <p>El sistema está diseñado para que muchas cosas ocurran al mismo tiempo sin interrumpirse.</p>
+  <h2>Tiempo compartido</h2>
+  <p>El kernel reparte fracciones de segundo de la CPU entre las aplicaciones activas, tan rápido que todas parecen funcionar de forma simultánea.</p>
+
+  <h2>Procesos y hilos</h2>
+  <table>
+    <tr><th>Concepto</th><th>Descripción</th></tr>
+    <tr><td>Proceso</td><td>Programa en ejecución con su propia memoria y un identificador único (PID). Si uno se congela, los demás siguen intactos.</td></tr>
+    <tr><td>Hilo</td><td>Subtarea dentro de un proceso. Por ejemplo, un navegador usa un hilo para descargar y otro para reproducir video.</td></tr>
+    <tr><td>Usuarios independientes</td><td>Varias personas pueden usar el equipo a la vez; lo que ejecuta un usuario en segundo plano sigue funcionando aunque no esté en pantalla.</td></tr>
+  </table>
+  <h2>Multiprocesamiento</h2>
+  <p>El sistema reparte el trabajo entre todos los núcleos del procesador sin que tengas que configurar nada. Es muy útil en tareas pesadas como renderizado 3D o edición de video.</p>
+  <h2>Control y automatización</h2>
+  <ul><li><strong>Monitor del sistema:</strong> herramienta visual para ver qué aplicaciones consumen CPU y RAM y cerrar las que no responden.</li><li><strong>Terminal:</strong> comandos para gestionar tareas en modo texto.</li><li><strong>Automatización:</strong> servicios invisibles que ejecutan tareas programadas, como respaldos nocturnos.</li></ul>
+  <pre>top                 # procesos en tiempo real
+ps aux | grep firefox
+kill 4321           # termina el proceso con PID 4321</pre>
+
+
+    
+</section>
+
+<!-- almacenamiento UNIDAD 3 -->
+
+<section class="chapter" id="almacenamiento" data-title="Unidad 3" data-desc="Almacenamiento, memoria y archivos.">
+  <h1>Unidad 3: Almacenamiento, memoria y archivos</h1>
+  <h2>Almacenamiento</h2>
+  <p>Es el espacio físico donde la computadora guarda la información de forma permanente: el sistema operativo, programas, documentos, imágenes y videos. Puede estar en un disco duro (HDD), una unidad de estado sólido (SSD), una memoria USB o un disco externo. A diferencia de la RAM, los datos permanecen aunque se apague el equipo.</p>
+  <h2>Memoria</h2>
+  <p>La memoria RAM guarda temporalmente lo que estás usando y se borra al apagar. Cuando se llena, Mint recurre a la <strong>swap</strong>, un espacio del disco que sirve de apoyo. Prueba el simulador:</p>
+  <div class="widget">
+    <label>Programas abiertos: <b id="nApps">3</b> <input type="range" id="apps" min="0" max="12" value="3"></label>
+    <p>RAM (4 GB)</p><div class="bar"><i id="ramBar"></i></div>
+    <p>Swap (2 GB)</p><div class="bar"><i id="swapBar"></i></div>
+    <p id="ramMsg" class="out"></p>
+  </div>
+  <h2>Archivos y sistema ext4</h2>
+  <p>Un archivo tiene nombre, extensión (.pdf, .jpg, .mp3) y una ubicación dentro de las carpetas. Mint usa el sistema de archivos <strong>ext4</strong> con <em>journaling</em>: registra los cambios antes de aplicarlos para evitar daños si se corta la energía.</p>
+  <h2>Jerarquía de directorios</h2>
+  <p>Todo parte de la raíz <code>/</code>. Selecciona un directorio:</p>
+  <div class="explorer">
+    <div class="btns"><button data-info="/ (raíz): carpeta principal de la que cuelga todo el sistema.">/</button><button data-info="/home: archivos personales y configuración de cada usuario.">/home</button><button data-info="/etc: archivos de configuración del sistema.">/etc</button><button data-info="/usr: programas, bibliotecas y aplicaciones instaladas.">/usr</button><button data-info="/var: datos que cambian con frecuencia, como los registros (logs).">/var</button><button data-info="/boot: archivos necesarios para arrancar el sistema.">/boot</button><button data-info="/media: punto donde se montan USB y discos externos.">/media</button></div>
+    <p class="out">Haz clic en un directorio.</p>
+  </div>
+  <h2>Terminal de práctica</h2>
+  <p>Simulación segura: escribe <code>help</code> para ver los comandos disponibles.</p>
+  <div class="term"><div id="tout">Terminal simulada de Linux Mint</div><div class="line"><span>mint@pc:~$</span><input id="tin" type="text" autocomplete="off" spellcheck="false" aria-label="Escribe un comando"></div></div>
+</section>
+
+<!-- redes UNIDAD 4-->
+
+<section class="chapter" id="redes" data-title="Unidad 4" data-desc="Redes, servicios distribuidos y seguridad.">
+  <h1>Unidad 4: Redes y servicios distribuidos</h1>
+  <p>La conexión se administra desde el icono de red de la bandeja (NetworkManager): ahí eliges una red Wi-Fi, usas cable Ethernet o configuras una VPN.</p>
+  <figure>
+    <svg viewBox="0 0 420 130" role="img" aria-label="Comunicación cliente-servidor">
+      <g class="s2" stroke-width="1.5"><rect x="10" y="40" width="90" height="50" rx="8"/><rect x="165" y="40" width="90" height="50" rx="8"/><rect x="320" y="40" width="90" height="50" rx="8"/></g>
+      <text x="55" y="70">Cliente</text><text x="210" y="70">Router</text><text x="365" y="70">Servidor</text>
+      <g stroke="var(--verde)" stroke-width="2.5"><line x1="100" y1="55" x2="165" y2="55"/><line x1="255" y1="55" x2="320" y2="55"/><line x1="100" y1="78" x2="165" y2="78"/><line x1="255" y1="78" x2="320" y2="78"/></g>
+      <text x="132" y="45">petición</text><text x="132" y="100">respuesta</text><text x="287" y="45">petición</text><text x="287" y="100">respuesta</text>
+    </svg>
+    <figcaption>En el modelo cliente-servidor, un equipo solicita un servicio y otro se lo proporciona.</figcaption>
+  </figure>
+  <h2>Conceptos básicos</h2>
+  <table>
+    <tr><th>Término</th><th>Función</th></tr>
+    <tr><td>Dirección IP</td><td>Identifica de forma única a cada dispositivo en la red.</td></tr>
+    <tr><td>DHCP</td><td>Asigna direcciones IP automáticamente.</td></tr>
+    <tr><td>DNS</td><td>Traduce nombres de dominio (como google.com) a direcciones IP.</td></tr>
+    <tr><td>TCP/IP</td><td>Conjunto de protocolos para comunicar datos en redes e internet.</td></tr>
+  </table>
+  <h2>Comandos de red</h2>
+  <pre>ip a                  # ver tu dirección IP
+ping google.com       # probar conectividad
+nslookup google.com   # consultar el DNS</pre>
+  <h2>Servicios distribuidos</h2>
+  <p>Son sistemas donde varias computadoras trabajan juntas compartiendo recursos y tareas. En Mint destacan <strong>SSH</strong>, para controlar otro equipo por terminal de forma cifrada (requiere instalar <code>openssh-server</code> en el equipo remoto), y <strong>Samba</strong>, para compartir carpetas con computadoras Windows.</p>
+
+<h1>Vulnerabilidad y seguridad</h1>
+  <p>La seguridad de Linux Mint se basa en el modelo de permisos de Unix integrado en el kernel.</p>
+
+  <h2>Separación de privilegios</h2>
+  <ul><li>Los archivos del sistema están en la raíz (<code>/</code>) y pertenecen al administrador; los del usuario están en <code>/home/usuario</code>.</li><li>Para modificar el sistema se requiere <code>sudo</code> y la contraseña del usuario.</li></ul>
+  <h2>Herramientas de protección</h2>
+  <ul><li><strong>UFW:</strong> cortafuegos que controla las conexiones de red; en Mint conviene activarlo.</li><li><strong>AppArmor:</strong> limita lo que cada programa puede hacer (control de acceso obligatorio, MAC).</li><li><strong>Sandboxing:</strong> Flatpak ejecuta las aplicaciones en entornos aislados.</li><li><strong>Repositorios oficiales:</strong> software de fuentes verificadas.</li></ul>
+  <h2>Permisos de archivos</h2>
+  <table>
+    <tr><th>Símbolo</th><th>Permiso</th><th>Ejemplo</th></tr>
+    <tr><td>r</td><td>Lectura</td><td><code>ls -l archivo</code></td></tr>
+    <tr><td>w</td><td>Escritura</td><td><code>chmod u+w archivo</code></td></tr>
+    <tr><td>x</td><td>Ejecución</td><td><code>chmod +x script.sh</code></td></tr>
+  </table>
+  <h2>Recomendaciones</h2>
+  <ol><li>Instala las actualizaciones de seguridad con regularidad.</li><li>Descarga programas solo del Gestor de software o del sitio oficial.</li><li>No ejecutes comandos con <code>sudo</code> sin saber qué hacen.</li><li>Usa contraseñas largas y haz respaldos con Timeshift.</li></ol>
+  <div class="note warn">Un antivirus tradicional casi no es necesario en Linux, pero eso no significa que el sistema sea inmune: la mayoría de los riesgos viene de software dudoso y contraseñas débiles.</div>
+    
+</section>
+
+<!-- preguntas -->
+
+<section class="chapter" id="faq" data-title="Preguntas frecuentes" data-desc="Respuestas rápidas a las dudas más comunes.">
+  <h1>Preguntas frecuentes</h1>
+  <details><summary>¿Qué es Linux Mint?</summary><p>Un sistema operativo basado en Linux, fácil de usar, estable y seguro. Es una alternativa a Windows y macOS.</p></details>
+  <details><summary>¿Es gratis?</summary><p>Sí, es gratuito y de código abierto. Cualquier persona puede descargarlo y usarlo.</p></details>
+  <details><summary>¿Es fácil para principiantes?</summary><p>Sí. Su interfaz es amigable y se parece a Windows, por eso es muy recomendado para quien empieza en Linux.</p></details>
+  <details><summary>¿Qué sistema de archivos utiliza?</summary><p>Principalmente ext4, que organiza la información en carpetas y directorios jerárquicos.</p></details>
+  <details><summary>¿Para qué sirve el superusuario (sudo)?</summary><p>Para realizar cambios importantes, como instalar programas o modificar archivos del sistema.</p></details>
+  <details><summary>¿Qué es UFW y qué es AppArmor?</summary><p>UFW es el firewall que protege contra accesos no autorizados desde la red. AppArmor limita lo que cada programa puede hacer dentro del sistema.</p></details>
+  <details><summary>¿Funciona en computadoras viejas?</summary><p>Sí, sobre todo las ediciones Xfce y MATE, que consumen menos recursos.</p></details>
+  <details><summary>¿Se pueden instalar aplicaciones?</summary><p>Sí, desde el Gestor de software: navegadores, suites de oficina, reproductores y mucho más.</p></details>
+</section>
+
+<!-- problemas -->
+
+<section class="chapter" id="problemas" data-title="Solución de problemas" data-desc="Fallas comunes en Mint y en esta guía.">
+  <h1>Solución de problemas comunes</h1>
+  <details><summary>La USB no arranca al instalar</summary><p><strong>Causa posible:</strong> orden de arranque incorrecto o Secure Boot. <strong>Solución:</strong> entra al menú de arranque (F12, F2 o Esc), elige la USB y, si falla, revisa la opción Secure Boot en la BIOS. Verifica también que la ISO se haya grabado bien.</p></details>
+  <details><summary>No aparece el Wi-Fi</summary><p><strong>Causa posible:</strong> falta el driver de la tarjeta. <strong>Solución:</strong> abre el Administrador de controladores, instala el driver recomendado y reinicia.</p></details>
+  <details><summary>El sistema va lento</summary><p><strong>Causa posible:</strong> RAM llena o demasiados programas de inicio. <strong>Solución:</strong> revisa el Monitor del sistema, cierra lo que no uses o prueba una edición más ligera.</p></details>
+  <details><summary>Una aplicación no responde</summary><p><strong>Solución:</strong> ciérrala desde el Monitor del sistema o, en terminal, localiza su PID con <code>ps aux</code> y usa <code>kill PID</code>.</p></details>
+  <details><summary>Se acabó el espacio en disco</summary><p><strong>Solución:</strong> elimina archivos grandes, vacía la papelera y ejecuta <code>sudo apt clean</code> para borrar paquetes descargados.</p></details>
+  <details><summary>Esta guía no muestra las imágenes o los estilos</summary><p><strong>Causa posible:</strong> los archivos no están en la misma carpeta. <strong>Solución:</strong> mantén <code>index.html</code>, <code>styles.css</code>, <code>script.js</code> y la carpeta <code>img</code> juntos y recarga la página.</p></details>
+</section>
+
+<!-- glosario -->
+<section class="chapter" id="glosario" data-title="Glosario" data-desc="Términos clave con filtro en vivo.">
+  <h1>Glosario</h1>
+  <p>Escribe en el filtro para reducir la lista.</p>
+  <input id="gf" class="filtro" type="search" placeholder="Filtrar términos…" aria-label="Filtrar glosario">
+  <dl id="gloss">
+    <div><dt>APT</dt><dd>Gestor de paquetes de Debian y Ubuntu; instala, actualiza y elimina software resolviendo dependencias.</dd></div>
+    <div><dt>AppArmor</dt><dd>Herramienta de control de acceso obligatorio que restringe lo que pueden hacer las aplicaciones.</dd></div>
+    <div><dt>Cinnamon</dt><dd>Entorno de escritorio desarrollado por Linux Mint, intuitivo y parecido a Windows.</dd></div>
+    <div><dt>Concurrencia</dt><dd>Capacidad del sistema de ejecutar varios procesos o tareas al mismo tiempo.</dd></div>
+    <div><dt>Debian</dt><dd>Distribución de Linux conocida por su estabilidad; base de Ubuntu y LMDE.</dd></div>
+    <div><dt>Dependencia</dt><dd>Biblioteca o programa adicional que una aplicación necesita para funcionar.</dd></div>
+    <div><dt>DHCP</dt><dd>Protocolo que asigna direcciones IP automáticamente.</dd></div>
+    <div><dt>DNS</dt><dd>Sistema que traduce nombres de dominio en direcciones IP.</dd></div>
+    <div><dt>Driver</dt><dd>Controlador que permite al sistema comunicarse con un dispositivo de hardware.</dd></div>
+    <div><dt>ext4</dt><dd>Sistema de archivos de Linux con journaling, estable y de alto rendimiento.</dd></div>
+    <div><dt>Firewall</dt><dd>Sistema que supervisa y controla el tráfico de red entrante y saliente.</dd></div>
+    <div><dt>Flatpak</dt><dd>Formato de distribución de aplicaciones con sus propias dependencias.</dd></div>
+    <div><dt>Hilo</dt><dd>Unidad de ejecución dentro de un proceso.</dd></div>
+    <div><dt>Journaling</dt><dd>Registro de cambios antes de aplicarlos para reducir el riesgo de pérdida de datos.</dd></div>
+    <div><dt>Kernel</dt><dd>Núcleo del sistema; gestiona hardware, memoria y procesos.</dd></div>
+    <div><dt>LMDE</dt><dd>Linux Mint Debian Edition, basada directamente en Debian.</dd></div>
+    <div><dt>LTS</dt><dd>Versión con soporte técnico y actualizaciones durante un periodo prolongado.</dd></div>
+    <div><dt>Montaje</dt><dd>Integrar un dispositivo de almacenamiento al sistema de archivos.</dd></div>
+    <div><dt>Partición</dt><dd>División lógica del disco para organizar sistema y datos.</dd></div>
+    <div><dt>PID</dt><dd>Número único que identifica a cada proceso en ejecución.</dd></div>
+    <div><dt>Repositorio</dt><dd>Servidor donde se almacenan paquetes disponibles para instalar.</dd></div>
+    <div><dt>Sandboxing</dt><dd>Técnica que ejecuta aplicaciones en entornos aislados.</dd></div>
+    <div><dt>Swap</dt><dd>Espacio del disco usado como memoria cuando la RAM se llena.</dd></div>
+    <div><dt>Terminal</dt><dd>Interfaz de línea de comandos para controlar el sistema con texto.</dd></div>
+    <div><dt>UFW</dt><dd>Uncomplicated Firewall: herramienta sencilla para administrar el firewall.</dd></div>
+  </dl>
+  <p id="gfVacio" class="out" hidden>Ningún término coincide con tu filtro.</p>
+</section>
+
+<!-- conclusiones **PENDIENTE: pedir y agregar la conclusión de cada integrante del equipo** -->
+
+<section class="chapter" id="conclusiones" data-title="Conclusiones" data-desc="Conclusión de cada integrante del equipo.">
+  <h1>Conclusiones</h1>
+  <article class="concl">
+    <h3>Gutiérrez Zamora Ian Daniel</h3>
+    <p>En general, este proyecto fue una experiencia muy enriquecedora y distinta a las actividades que normalmente realizamos. Aunque al principio nuestro objetivo era únicamente investigar sobre Linux Mint, el desarrollo de una página 
+      web desde cero hizo que el trabajo fuera mucho más desafiante e interesante. Como equipo, tuvimos que recopilar y organizar una gran cantidad de información, seleccionar los temas más relevantes y encontrar formas de explicar conceptos 
+      complejos, como la memoria swap, los permisos de seguridad y el proceso de inicio del sistema operativo. Para lograrlo, incorporamos herramientas interactivas, simuladores y una terminal que facilitaran el aprendizaje de manera dinámica. 
+      Además, la creación de la plataforma nos permitió mejorar nuestra comunicación y organización como equipo, así como prestar atención al diseño y al correcto funcionamiento de la página en el navegador. Personalmente, aprendí que Linux no 
+      es un sistema exclusivo para personas con conocimientos avanzados, sino que puede comprenderse con la orientación adecuada. Esta experiencia me ayudó a conocer mejor su funcionamiento interno y a valorar cómo la colaboración y la creatividad 
+      permiten transformar conceptos teóricos complejos en recursos prácticos y útiles para otros estudiantes.</p>
+  </article>
+  <article class="concl">
+    <h3>Doria Martínez Ashlee Alejandra</h3>
+    <p>La verdad este proyecto fue una experiencia muy completa y diferente a lo que solemos entregar. Al principio la idea era solo investigar sobre Linux Mint, pero cuando nos pusimos a armar la página web desde cero, el reto se volvió mucho más interesante.
+       Tuvimos que organizar muchísima información entre todos, debatir qué cosas eran realmente importantes y buscar la manera de explicar temas pesados —como la memoria swap, los permisos de seguridad o cómo arranca el sistema— de una forma interactiva, 
+       con simuladores y la terminal, para que cualquier compañero pudiera entenderlo sin aburrirse. Desarrollar la plataforma nos obligó a coordinarnos bien como equipo, cuidar el diseño para que fuera claro y asegurarnos de que todo funcionara en el navegador. En lo personal,
+        me quedo con que aprendí a no ver a Linux como algo complicado o exclusivo para expertos; al final entendí cómo trabaja por dentro y cómo el trabajo en equipo sirve para convertir teoría difícil en una herramienta práctica que de verdad ayuda a los demás.</p>
+  </article>
+<article class="concl">
+    <h3>Lozano Alfredo Isaac</h3>
+    <p>En este PIA creamos una guía web de Linux Mint para que cualquier compañero de la materia pueda entender cómo funciona un sistema operativo real. No hay que instalar nada ni crear una cuenta. Basta con abrirla en el navegador de una computadora o de un celular. Más que un manual para leer, queríamos hacer una herramienta para consultar y practicar.
+La guía sigue las cuatro unidades de la materia y cubre seis áreas. Estas son: descripción general, arquitectura y desempeño, concurrencia, almacenamiento, redes y servicios distribuidos, y seguridad. En cada una relacionamos la teoría con componentes reales de Mint. Por ejemplo, el kernel monolítico y modular, GRUB y systemd en el arranque, APT y Flatpak para instalar software, el reparto del procesador entre procesos e hilos, la RAM y la swap, el sistema de archivos ext4 con journaling, la administración de red y SSH, y las protecciones como sudo, los permisos, UFW y AppArmor.</p>
+  </article>
+<article class="concl">
+    <h3>Mendoza Martínez Fernando Joshua</h3>
+    <p>Para hacer la página web del manual de Linux Mint usamos tres archivos: uno de HTML, uno de CSS y uno de JavaScript. El HTML es donde está todo el contenido, o sea los textos, los capítulos y las tablas. El CSS se encarga del diseño: los colores verdes, las letras, las tarjetas y el modo oscuro. El JavaScript es lo que hace que la página se mueva: el menú, el buscador, las pestañas, la terminal de práctica y el simulador de memoria RAM.
+Lo que aprendí es que hacer una página es como armar un manual por capas: primero se escribe lo que se quiere explicar, luego se le da buen aspecto y al final se le agrega lo interactivo. También aprendí que no basta con que se vea bonita, tiene que ser fácil de usar, por eso le pusimos índice, buscador y botones para pasar de un capítulo a otro.
+ </p>
+  </article>
+<article class="concl">
+    <h3>José Manuel González Moreno</h3>
+    <p>Este proyecto fue una experiencia enriquecedora que nos permitió aprender sobre Linux Mint y desarrollar una página web interactiva desde cero. Además de reforzar nuestros conocimientos técnicos, mejoramos nuestra organización y trabajo en equipo. Personalmente, comprendí que Linux no es tan complicado como parece y que, con creatividad y colaboración, podemos convertir temas complejos en herramientas útiles para el aprendizaje.</p>
+  </article>
+
+</section>
+
+<!-- bibliografía **PENDIENTE: pedir y agregar las fuentes consultadas** -->
+
+<section class="chapter" id="bibliografia" data-title="Bibliografía" data-desc="Fuentes consultadas y enlace de la aplicación.">
+  <h1>Bibliografía</h1>
+  <ul>
+    <li>Linux Mint. (s. f.). <em>Frequently asked questions</em>. <a href="https://linuxmint.com/faq.php" target="_blank" rel="noopener">https://linuxmint.com/faq.php</a></li>
+    <li>Linux Mint. (s. f.). <em>Documentation</em>. <a href="https://linuxmint.com/documentation.php" target="_blank" rel="noopener">https://linuxmint.com/documentation.php</a></li>
+    <li>Linux Mint Installation Guide. (s. f.). <a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/" target="_blank" rel="noopener">https://linuxmint-installation-guide.readthedocs.io/en/latest/</a></li>
+    <li>Linux Mint. (s. f.). <em>Release Notes</em>. <a href="https://linuxmint.com/download_all.php" target="_blank" rel="noopener">https://linuxmint.com/download_all.php</a></li>
+    <li>Ubuntu. (s. f.). <em>Official Ubuntu Documentation</em>. <a href="https://help.ubuntu.com/" target="_blank" rel="noopener">https://help.ubuntu.com/</a></li>
+    <li>The Linux Kernel documentation. (s. f.). <a href="https://docs.kernel.org/" target="_blank" rel="noopener">https://docs.kernel.org/</a></li>
+    <li>systemd. (s. f.). <em>System and service manager</em>. <a href="https://systemd.io/" target="_blank" rel="noopener">https://systemd.io/</a></li>
+    <li>Canonical Ltd. (s. f.). <em>Ubuntu Server documentation: Security</em>. <a href="https://ubuntu.com/server/docs/security-introduction" target="_blank" rel="noopener">https://ubuntu.com/server/docs/security-introduction</a></li>
+    <li>The Debian Project. (s. f.). <em>Debian Reference</em>. <a href="https://www.debian.org/doc/manuals/debian-reference/" target="_blank" rel="noopener">https://www.debian.org/doc/manuals/debian-reference/</a></li>
+      <li>The Linux Kernel Organization <em>Debian Reference</em>. <a href="https://www.kernel.org" target="_blank"
+  </ul>
+
+</section>
+
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
